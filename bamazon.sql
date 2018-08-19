@@ -11,7 +11,7 @@ CREATE TABLE products(
     PRIMARY KEY (itemid)    
 );
 
-INSERT INTO products(Product_Name, Department_Name, Price, Stock_Quantity)
+INSERT INTO products(ProductName, DepartmentName, Price, StockQuantity)
 VALUES("Levis", "Apparel", 89.99, 11),
 ("Safety razor", "Men's Grooming", 39.99, 15),
 ("Rubik's Cube", "Puzzles/Games", 19.99, 7),
