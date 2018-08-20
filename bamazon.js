@@ -52,7 +52,7 @@ var customerPrompt = function(res){
                 }).then(function(answer){
                     if((res[id].stockquantity-answer.quantity)>0){
                         connection.query("UPDATE products SET stockquantity='"+(res[id].stockquantity-answer.quantity)+"' WHERE productname='"+product+"'", function(err,res2){
-                            console.log("Product purchased. Total Price: " +answer.price*answer.quantity);
+                            console.log("Product(s) purchased. Total Price: " +(res[id].price*answer.quantity));
                             makeTable();
                         })
                     } else {
